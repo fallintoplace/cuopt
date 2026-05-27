@@ -23,13 +23,15 @@ x2 = problem.addVariable(lb=0, ub=1, vtype=CONTINUOUS, name="stock_b")
 x3 = problem.addVariable(lb=0, ub=1, vtype=CONTINUOUS, name="stock_c")
 
 # Expected returns
-r1, r2, r3 = 0.12, 0.08, 0.05  # 12%, 8%, 5%
+r1 = 0.12  # 12%
+r2 = 0.08  # 8%
+r3 = 0.05  # 5%
 target_return = 0.08
 
 # Covariance matrix Q:
-# [[0.04, 0.01, 0.005],
-#  [0.01, 0.02, 0.008],
-#  [0.005, 0.008, 0.01]]
+# Row 0: [0.04 | 0.01 | 0.005]
+# Row 1: [0.01 | 0.02 | 0.008]
+# Row 2: [0.005 | 0.008 | 0.01]
 #
 # Quadratic objective: x^T * Q * x
 # Expanded: 0.04*x1² + 0.02*x2² + 0.01*x3² + 2*0.01*x1*x2 + 2*0.005*x1*x3 + 2*0.008*x2*x3
@@ -159,9 +161,21 @@ Given covariance matrix Q and weight vector x:
 ```python
 # Covariance matrix
 Q = [
-    [0.04, 0.01, 0.005],
-    [0.01, 0.02, 0.008],
-    [0.005, 0.008, 0.01]
+    [
+        0.04,
+        0.01,
+        0.005,
+    ],
+    [
+        0.01,
+        0.02,
+        0.008,
+    ],
+    [
+        0.005,
+        0.008,
+        0.01,
+    ],
 ]
 
 # Expansion: x^T * Q * x

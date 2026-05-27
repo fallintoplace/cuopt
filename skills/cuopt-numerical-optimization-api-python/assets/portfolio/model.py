@@ -15,7 +15,9 @@ x1 = problem.addVariable(lb=0, ub=1, vtype=CONTINUOUS, name="stock_a")
 x2 = problem.addVariable(lb=0, ub=1, vtype=CONTINUOUS, name="stock_b")
 x3 = problem.addVariable(lb=0, ub=1, vtype=CONTINUOUS, name="stock_c")
 
-r1, r2, r3 = 0.12, 0.08, 0.05
+r1 = 0.12
+r2 = 0.08
+r3 = 0.05
 target_return = 0.08
 
 problem.setObjective(

@@ -45,7 +45,7 @@ Solving a problem with 426 constraints, 7195 variables (7195 integers), and 5212
 Presolve removed: 90 constraints, 1116 variables, 16171 nonzeros
 Presolved problem: 336 constraints, 6079 variables, 35950 nonzeros
 
-Root relaxation objective +2.58776093e+04
+Root relaxation objective 25877.6093
 
 Strong branching using 7 threads and 222 fractional variables
 Explored 386 nodes in 7.73s.
@@ -66,7 +66,7 @@ Solving a problem with 426 constraints, 7195 variables (7195 integers), and 5212
 Presolve removed: 90 constraints, 1116 variables, 16171 nonzeros
 Presolved problem: 336 constraints, 6079 variables, 35950 nonzeros
 
-Root relaxation objective +2.58776093e+04
+Root relaxation objective 25877.6093
 
 Strong branching using 63 threads and 222 fractional variables
 Explored 328 nodes in 1.09s.
